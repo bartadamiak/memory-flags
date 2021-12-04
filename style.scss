@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+.game-board {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, minmax(36px, 1fr));
+    grid-template-rows: repeat(4, minmax(36px, 1fr));
+    grid-row-gap: 5px;
+}
+
+.card {
+    width: 100%;
+    max-width: 150px;
+    max-height: 200px;
+    min-height: 150px;
+    border: 1px solid rgba($color: #000000, $alpha: 0.2);
+    box-shadow: 1px 2px 20px rgba($color: #000000, $alpha: 0.2);
+    border-radius: 10px;
+    height: auto;
+    z-index: 3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+}
+
+.card-back {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.back-content {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 80%;
+   
+}
+
+.card-front {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.front-content {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.5);
+}
+
+.hide {
+    display: none;
+}
+
+.opa {
+    opacity: 0.5;
+}
